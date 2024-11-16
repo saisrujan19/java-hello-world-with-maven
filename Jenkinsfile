@@ -11,6 +11,10 @@ pipeline {
                 sh 'mvn test'
             }
         }
-
+       stage('Complete') {
+            steps {
+                sh 'Job Completed'
+            }
+        }
     }
 }
